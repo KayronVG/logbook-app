@@ -66,4 +66,8 @@ public class Note {
         }
         return text;
     }
+
+    public Note clone(){
+        return null;
+    }
 }
