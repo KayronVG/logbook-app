@@ -53,7 +53,17 @@ public class Note {
     }
 
     public String getSummary() {
-        // not implemented
-        return "";
+        String text= "";
+
+        if (content != null){
+            if (content.length()<=15){
+                text = content;
+            }
+            else {
+                text = content.substring(0,15);
+            }
+
+        }
+        return text;
     }
 }
